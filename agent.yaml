@@ -1,0 +1,9 @@
+spec_version: "0.1.0"
+name: employee-retention-risk-reviewer
+version: 1.0.0
+description: Reviews aggregated workplace signals and suggests supportive retention actions for human HR teams.
+author: Janice Benita F
+runtime:
+  max_turns: 20
+  timeout: 120
+tags: [hr, retention, workforce, human-review]
