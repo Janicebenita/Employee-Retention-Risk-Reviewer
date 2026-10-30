@@ -19,3 +19,9 @@ A core limitation is that workplace signals cannot reliably predict personal cho
 ## Uncertainty and Human Review
 
 Uncertainty is always reported because context and individual circumstances may be missing. Human HR review and respectful employee engagement are required before action.
+
+## Implementation in This Repository
+
+This repository implements the worker as an OpenGAP declaration: `agent.yaml` defines the evidence inputs and review-oriented output, `SOUL.md` defines the non-discrimination and human-governance policy, and this file documents uncertainty and limits. `README.md` describes the supported retention-review use case.
+
+No HR-system connector, predictive model, or automated employment action exists in the repository. A compatible host may summarize supplied workplace evidence, but it must surface missing context and leave all decisions to authorized HR staff.
