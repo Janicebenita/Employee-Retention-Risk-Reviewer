@@ -22,6 +22,6 @@ Uncertainty is always reported because context and individual circumstances may 
 
 ## Implementation in This Repository
 
-This repository implements the worker as an OpenGAP declaration: `agent.yaml` defines the evidence inputs and review-oriented output, `SOUL.md` defines the non-discrimination and human-governance policy, and this file documents uncertainty and limits. `README.md` describes the supported retention-review use case.
+`agent.py` implements `review_retention(signals)`. It bounds and evaluates supplied aggregate engagement, overtime, and absence values against declared thresholds; retains only supplied values as evidence; proposes supportive workload/check-in actions; states that aggregate signals cannot predict an individual; prohibits adverse action; and requires HR review. `test_agent.py` verifies that a low engagement signal cannot enable adverse action.
 
-No HR-system connector, predictive model, or automated employment action exists in the repository. A compatible host may summarize supplied workplace evidence, but it must surface missing context and leave all decisions to authorized HR staff.
+No HR-system connector, predictive model, or automated employment action exists. The caller supplies aggregate evidence and authorized HR staff retain all decisions.
